@@ -1,224 +1,518 @@
 <!DOCTYPE html>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 
 <head>
-  <title>Arpit Sharma</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio | Arpit Sharma</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio - v4.5.0
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="is-preload">
-  <!-- Header -->
-  <header id="header">
-    <figure class="inner">
-      <a href="#about" class="image avatar">
-        <img src="images/DP.png" alt="Bitmoji image of author" />
-      </a>
-      <figcaption>Machine Learning Engineer</figcaption>
-    </figure>
+<body>
 
-    <!-- Navigation menu -->
-    <nav class="navbar">
-      <a href="#about"><i class="icon solid fa-user"></i> About</a><br />
-      <a href="#services"><i class="icon solid fa-suitcase"></i> Services</a><br />
-      <a href="#portfolio"><i class="icon solid fa-book"></i> Portfolio</a><br />
-      <a href="#contact"><i class="icon solid fa-envelope"></i> Contact</a>
-    </nav>
-  </header>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
 
-  <!-- Main -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <h1 class="logo"><a href="index.html"> </a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+		  <li><a href="assets/document/Adam_Leonard_Hubble_CV.docx">Résumé</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        
+		<h1>I'm <span class="typed" data-typed-items="Arpit Sharma, A University Graduate, A Software Developer, Seeking An Opportunity"></span></h1>
+        <p>Software Developer</p>
+
+        <ul class="list-unstyled list-social">
+          <!-- <li><a href="https://www.facebook.com/adamleonardhubble/"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/_adamhubble/"><i class="bi bi-instagram"></i></a></li> -->
+          <li><a href="https://www.Linkedin.com/in/Sharma-Arpit/"><i class="bi bi-linkedin"></i></a></li>
+		  <li><a href="https://GitHub.com/SharmaArpit956"><i class="bi bi-github"></i></a></li>
+        </ul>
+		
+		<div class="slideshow-container">
+
+		  <!-- Full-width slides/quotes -->
+		  <div class="mySlides">
+			<slideshowQuote>"Arpit excels in problem-solving and adapts swiftly to new challenges, showcasing a dedication to quality assurance that will serve well in technical fields."</slideshowQuote>
+			<p class="authorSlideshow">Kelvin Ansah</p>
+		  </div>
+		  
+		  <div class="mySlides">
+			<slideshowQuote>"Arpit is a skilled computer scientist and during his time at DMU he has shown to be a dedicated and very bright student. 
+			He successfully completed his postgraduate studies and received the Intelligent Systems and Robotics (MSc) with distinction in all modules."</slideshowQuote>
+			<p class="authorSlideshow">Dr. Fabio Caraffini</p>
+		  </div>
+
+		  <!-- Next/prev buttons -->
+		  <a class="prevSlideshow" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="nextSlideshow" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<!-- Dots/bullets/indicators -->
+		<div class="slideshow-dot-container">
+		  <span class="slideshowDot" onclick="currentSlide(1)"></span>
+		  <span class="slideshowDot" onclick="currentSlide(2)"></span>
+		  <span class="slideshowDot" onclick="currentSlide(3)"></span>
+		</div>
+		
+		
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
   <main id="main">
-    <!-- About -->
-    <section id="about">
-      <header class="major">
-        <h1>Hi, I'm Arpit Sharma.</h1>
-      </header>
-      <p>
 
-        I have recently completed Intelligent systems and Robotics MSc. with distinctions in all modules, specializing
-        in Robotics, and App development.
-        Two robotics-based patent applications are in the final examination stage. Previously worked as an assistant
-        engineer in a construction company.
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
 
-        If it helps to know, I built this website by
-        myself (starting from a template) which further demonstrates my
-        ability to rapidly learn new software, then implement it. If you wish
-        to learn more about my engineering skills check out my
-        <a href="https://Github.com/SharmaArpit956" target="_blank"> GitHub profile
-
-        </a>.
-      </p>
-      <!-- <ul class="actions">
-          <li><a href="#contact" class="button">Learn More</a></li>
-        </ul> -->
-    </section>
-
-    <!-- Services -->
-    <section id="services">
-      <header class="">
-        <h1>How Will My Skills Benefit You?</h1>
-      </header>
-      <p>
-        I want to mention the following projects on which I have worked on in the past related to Machine Learning,
-        Robotics, IOT and Mobile App Development.
-        I can use the knowledge gained from these projects for building similar projects.
-      </p>
-    </section>
-
-
-
-
-
-
-
-    <!-- Portfolio -->
-    <!-- TODO  - MAIN PORTFOLIO PROJECTS HERE-->
-    <section id="portfolio">
-      <h1>Projects</h1>
-      <div class="row">
-        <!-- Project one -->
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="https://github.com/SharmaArpit956/Intelligent-Hydroponic-System" class="image fit thumb" target="_blank">
-            <img src="images/thumbs/intelligent_hydroponic_system.jpg" alt="Mac book and credit card; Credit: @pickawood on Unsplash" />
-          </a>
-          <h3 style="text-align: center">
-            <strong>Intelligent hydroponic system</strong>
-          </h3>
-          <p style="text-align: center">
-            MACHINE LEARNING &#9679; TINYML &#9679; IOT &#9679; ANDROID STUDIO  &#9679; ARDUINO IDE &#9679; PYTHON &#9679; JAVA &#9679; C++
-          </p>
-        </article>
-        <!-- Project two -->
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="https://github.com/kurtispykes/twitter-sentiment-analysis" class="image fit thumb" target="_blank">
-            <img src="images/thumbs/robotic_gardening_device.jpg" alt="Twitter log; Credit: @alexbemore on Unsplash" /></a>
-          <h3 style="text-align: center">
-            <strong>Robotic gardening device</strong>
-          </h3>
-          <p style="text-align: center">
-            ANDROID STUDIO  &#9679; ARDUINO IDE &#9679;   AUTODESK EAGLE  
-            &#9679; IOT  &#9679;   PYTHON &#9679; JAVA &#9679; C++ 
+          <div class="col-lg-4 ">
             
-          </p>
-        </article>
-        <!-- Project three -->
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="hhttps://Github.com/SharmaArpit956" class="image fit thumb" target="_blank">
-            <img src="images/thumbs/time_based.jpg"
-              alt="Clipboard and laptop with tutorial writter; Credit: @markuswinkler on Unsplash" />
-          </a>
-          <h3 style="text-align: center">
-            <strong>Time-based password switching by tapping on a metallic surface</strong>
-          </h3>
-          <p style="text-align: center">
-             AUTODESK EAGLE  &#9679;   ARDUINO IDE
-            &#9679;  C++ 
-         
-          </p>
-        </article>
-        <!-- Project four -->
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="https://github.com/SharmaArpit956/Pathfinding-Pac-Man" class="image fit thumb" target="_blank">
-            <img src="images/thumbs/pacman.png" alt="Students in a class room; Credit: @sambalye on Unsplash" />
-          </a>
-          <h3 style="text-align: center"><strong>Pathfinding Pac-Man: shortest path optimisation using search algorithms/strong></h3>
-          <p style="text-align: center">
-            PYGAME &#9679; VS CODE &#9679; PYTHON  
-          </p>
-        </article>
+				<img src="assets/img/profile.jpg" class="img-responsive" alt="me">
+            
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr" style="text-align:justify;">
+
+            <p class="p-heading">Hey, I'm Arpit! </p>
+            <p>With a strong foundation in software development, I've honed my expertise in machine learning, artificial intelligence, and robotics. My three-year journey in these domains has sharpened my problem-solving and technical skills. </p>
+              
+              <p> I thrive in navigating complex technical landscapes, driving project success. My collaborative ethos, coupled with organizational acumen, enhances team dynamics and project outcomes.</p>
+              
+                <p> My technical versatility is evident across diverse programming environments. I quickly master new technical skills, adapting to fast-paced, evolving project settings.</p>
+              
+                  <p> I aspire to contribute to cutting-edge machine learning, AI, and robotics initiatives, fostering innovation and business growth within the organization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-intersect"></i>
+                <span>UI/UX DESIGN</span>
+                <p class="separator">User Interface and Experience Design</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-cpu"></i>
+                <span>INTELLIGENT APPLICATIONS</span>
+                <p class="separator">Intelligent Agent Development</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-app-indicator"></i>
+                <span>MISCELLANEOUS APPLICATIONS</span>
+                <p class="separator">Virtual Course Application Development</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+<div class="swiper-slide">
+  <div class="services-block">
+    <i class="bi bi-phone"></i>
+    <span class="service-title">Flutter App Development</span>
+    <p class="separator">>Cross-Platform Applications Development</p>
+  </div>
+</div> <!-- End swiper-slide item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </div>
 
+    </div><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Portfolio</h2>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Professional</li>
+              <li data-filter=".filter-card">Personal</li>
+              <li data-filter=".filter-web">Academic</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+     
+
+<!-- NEW PROJECTS -->
 
 
 
 
-<!-- PATENT APPLICATIONS -->
+
 
     
-      <h1>Patent Applications</h1>
-      <div class="row">
-        <!-- Patent Application one -->
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="https://github.com/SharmaArpit956/Patent-Application-Time-based-password-switching-by-tapping-on-a-metallic-surface" class="image fit thumb" target="_blank">
-            <img src="images/thumbs/patent.jpg" alt="Mac book and credit card; Credit: @pickawood on Unsplash" />
-          </a>
-          <h3 style="text-align: center">
-            <strong>Time-based password switching by tapping on a metallic surface</strong>
-          </h3>
-        
-        </article>
-        <!-- Patent Application two -->
-        <article class="col-6 col-12-xsmall work-item">
-          <a href="https://github.com/SharmaArpit956/Patent-Application-Robotic-Gardening-Device" class="image fit thumb" target="_blank">
-            <img src="images/thumbs/patent.jpg" alt="Twitter log; Credit: @alexbemore on Unsplash" /></a>
-          <h3 style="text-align: center">
-            <strong>Robotic gardening device</strong>
-          </h3>
-        
-        </article>
-        
+    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <img src="assets/img/portfolio/robotic_gardening_device.jpg" class="img-fluid" alt="">
+      <div class="portfolio-info">
+        <h4>Robotic Gardening Device</h4>
+        <p>Intelligent Agent</p>
+        <a href="assets/img/portfolio/robotic_gardening_device.jpg" data-gallery="portfolioGallery"
+          class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+        <div class="work-item-tag" style="background-color: #0f579f">
+          <span>VS Code</span>
+        </div>
+        <div class="work-item-tag" style="background-color: #a60b0b">
+          <span>Python</span>
+        </div>
+        <div class="work-item-tag" style="background-color: #a60b0b">
+          <span>Java</span>
+        </div>
+        <div class="work-item-tag" style="background-color: #a60b0b">
+          <span>C</span>
+        </div>
+        <a href="portfolio-aci.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/aci-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Pathfinding Pac-Man</h4>
+              <p>Intelligent Agent (Windows)</p>
+              <a href="assets/img/portfolio/aci-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+				<div class="work-item-tag" style="background-color: #0f579f">
+					<span>Microsoft Visual Studio</span>
+				</div>
+				<div class="work-item-tag" style="background-color: #a60b0b">
+					<span>Python</span>
+				</div>
+              <a href="portfolio-aci.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/imrec-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mobile Robot Environment Charting</h4>
+              <p>Intelligent Agent (Windows)</p>
+              <a href="assets/img/portfolio/imrec-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+				<div class="work-item-tag" style="background-color: #0f579f">
+					<span>The Construct</span>
+				</div>
+				<div class="work-item-tag" style="background-color: ">
+					<span>Robot Operating System</span>
+				</div>
+				<div class="work-item-tag" style="background-color: #a60b0b">
+					<span>Python</span>
+				</div>
+              <a href="portfolio-intelligentmobilerobotsone.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="assets/img/portfolio/intelligent_hydroponic_sy                  stem.JPG" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Intelligent Hydroponic System</h4>
+            <p>Intelligent Agent</p>
+            <a href="assets/img/portfolio/intelligent_hydroponic_system.JPG" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+            <div class="work-item-tag" style="background-color: #0f579f">
+              <span>VS Code</span>                                                
+            </div>
+            <div class="work-item-tag" style="background-color: #a60b0b">
+              <span>Python</span>
+            </div>
+            <div class="work-item-tag" style="background-color: #a60b0b">
+              <span>Java</span>
+            </div>
+            <div class="work-item-tag" style="background-color: #a60b0b">
+              <span>C</span>
+            </div>
+            <a href="portfolio-aci.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+          
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/imrl-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mobile Robot Localisation</h4>
+              <p>Intelligent Agent (Windows)</p>
+              <a href="assets/img/portfolio/imrl-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+				<div class="work-item-tag" style="background-color: #0f579f">
+					<span>The Construct</span>
+				</div>
+				<div class="work-item-tag" style="background-color: ">
+					<span>Robot Operating System</span>
+				</div>
+				<div class="work-item-tag" style="background-color: #a60b0b">
+					<span>Python</span>
+				</div>
+              <a href="portfolio-intelligentmobilerobotstwo.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/mobilerobotics-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mobile Robot Controller (Behaviour)</h4>
+              <p>Intelligent Agent (Windows)</p>
+              <a href="assets/img/portfolio/mobilerobotics-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+				<div class="work-item-tag" style="background-color: #0f579f">
+					<span>CoppeliaSim</span>
+				</div>
+				<div class="work-item-tag" style="background-color: #a60b0b">
+					<span>Lua</span>
+				</div>
+              <a href="portfolio-mobilerobotics.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/mobilerobots-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mobile Robot Controller (Objective)</h4>
+              <p>Intelligent Agent (Windows)</p>
+              <a href="assets/img/portfolio/mobilerobots-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+				<div class="work-item-tag" style="background-color: #0f579f">
+					<span>CoppeliaSim</span>
+				</div>
+				<div class="work-item-tag" style="background-color: #a60b0b">
+					<span>Lua</span>
+				</div>
+              <a href="portfolio-mobilerobots.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/nlp-6.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Chatbot</h4>
+              <p>Intelligent Agent (Windows)</p>
+              <a href="assets/img/portfolio/nlp-6.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+				<div class="work-item-tag" style="background-color: #0f579f">
+					<span>Google Colaboratory</span>
+				</div>
+				<div class="work-item-tag" style="background-color: #a60b0b">
+					<span>Python</span>
+				</div>
+              <a href="portfolio-nlp.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/anndl-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Intrusion Detection System</h4>
+              <p>Intelligent Agent (Windows)</p>
+              <a href="assets/img/portfolio/anndl-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+				<div class="work-item-tag" style="background-color: #0f579f">
+					<span>Google Colaboratory</span>
+				</div>
+				<div class="work-item-tag" style="background-color: #a60b0b">
+					<span>Python</span>
+				</div>
+              <a href="portfolio-anndl.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+
+        </div>
+
       </div>
 
+    </div><!-- End Portfolio Section -->
+	
 
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
 
+            <div class="col-lg-6">
+              <div class="contact-contact">
+                <h2 class="mb-30">GET IN TOUCH</h2>
+					<dl class="contact-details">
+						<dt>Where I'm Located</dt>
+						<dd><a href="https://www.google.com/maps/place/Birmingham/@52.1390716,-0.5215378,12z/data=!3m1!4b1!4m5!3m4!1s0x4877b6c6c66c36cd:0x125df4c90cabaf30!8m2!3d52.1386394!4d-0.4667782" target="_blank" rel="noopener noreferrer">Birmingham, England, United Kingdom</a></dd>
+						<dd> <br> <dd>
+						<dt>Mobile Number</dt>
+						<dd>(+44) 07882113088</dd>
+						<dd><br><dd>
+						<dt>Email Address</dt>
+						<dd>Sharma.Arpit956@Gmail.com</dd>
+					</dl>
+				</div>
+            </div>
 
+            <div class="col-lg-6">
+				<h2 class="mb-30">ACCOLADE</h2>
+					<dl class="contact-details">
+						<dt>Patent Applications</dt>
+						<dd><a href="https://github.com/SharmaArpit956/Patent-Application-Time-based-password-switching-by-tapping-on-a-metallic-surface/" target="_blank" rel="noopener noreferrer">Time-based password switching by tapping on a metallic surface</a></dd>
+						<dd><a href="https://github.com/SharmaArpit956/Patent-Application-Robotic-Gardening-Device/" target="_blank" rel="noopener noreferrer">Robotic gardening device</a></dd>
+						<dd><br><br><br></dd>
+						<dt>Publications</dt>
+						<dd>Deployment of a Machine Learning Method on a Small and Low-powered Hardware for Monitoring and Controlling a Hydroponic
+            System</dd>
+						</dl>
+					</dl>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
 
+  </main><!-- End #main -->
 
-      <ul class="actions">
-        <li>
-          <a href="https://Github.com/SharmaArpit956" class="button" target="_blank">Full Portfolio</a>
-        </li>
-      </ul>
-    </section>
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
 
-    <!-- Contact --> -->
-    <!-- TODO FORM -->
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/adamleonardhubble/"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/_adamhubble/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.Linkedin.com/in/Sharma-Arpit/"><i class="bi bi-linkedin"></i></a></li>
+		  <li><a href="https://GitHub.com/SharmaArpit956"><i class="bi bi-github"></i></a></li>
+        </ul>
 
-    <section id="contact">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchMzfSlnFUlyB0g178wPm8GfV38DfACxC8IfXRX7AkY0-J-A/viewform?embedded=true" width="700" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          <!-- Loading… -->
-        </iframe>
-      </section>
+      </div>
 
+      <p>&copy; 2023 by Arpit Sharma</p>
 
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
 
-
-  </main>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="inner">
-      <ul class="icons">
-        <!-- <li><a href="https://twitter.com/KurtisPykes" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
-        <li>
-          <a href="https://linkedin.com/in/sharma-arpit" class="icon brands fa-linkedin" target="_blank"><span
-              class="label">LinkedIn</span></a>
-        </li>
-        <li>
-          <a href="https://github.com/sharmaarpit956" class="icon brands fa-github" target="_blank"><span
-              class="label">Github</span></a>
-        </li>
-      </ul>
-      <ul class="copyright" >
-        <li>&copy; Untitled</li>
-        <li >Design: <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
     </div>
-  </footer>
+  </div><!-- End Footer -->
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.poptrox.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
