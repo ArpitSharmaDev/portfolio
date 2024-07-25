@@ -2,4 +2,4 @@
 
 Arpit Sharma
 
-Available from: https://adamleonardhubble.github.io/portfolio/
+Available from: https://arpitsharmadev.github.io/portfolio/
